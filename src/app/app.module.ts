@@ -9,7 +9,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { VeterinariosComponent } from './veterinarios/veterinarios.component';
@@ -37,7 +39,9 @@ import { LoginComponent } from './login/login.component';
     MatIconModule,
     MatButtonModule,
     MatGridListModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
