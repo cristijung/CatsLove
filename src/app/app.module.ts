@@ -11,6 +11,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { GaleriaComponent } from './galeria/galeria.component';
@@ -41,7 +42,8 @@ import { LoginComponent } from './login/login.component';
     MatGridListModule,
     MatTableModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
