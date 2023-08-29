@@ -19,7 +19,4 @@ export class GaleriaComponent {
         this.cats = data;
       });
   }
-
-
-
 }
