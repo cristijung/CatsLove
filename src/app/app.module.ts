@@ -19,6 +19,8 @@ import { VeterinariosComponent } from './veterinarios/veterinarios.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ContatoComponent } from './contato/contato.component';
 import { LoginComponent } from './login/login.component';
+import { AgendaComponent } from './agenda/agenda.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { LoginComponent } from './login/login.component';
     VeterinariosComponent,
     NotFoundComponent,
     ContatoComponent,
-    LoginComponent
+    LoginComponent,
+    AgendaComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,8 @@ import { LoginComponent } from './login/login.component';
     MatTableModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

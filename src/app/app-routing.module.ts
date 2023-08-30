@@ -6,6 +6,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { VeterinariosComponent } from './veterinarios/veterinarios.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AgendaComponent } from './agenda/agenda.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'galeria', component: GaleriaComponent},
   { path: 'veterinarios', component: VeterinariosComponent},
   { path: 'login', component: LoginComponent},
+  { path: 'agenda', component: AgendaComponent},
   { path: '**', component: NotFoundComponent},
 ];
 
