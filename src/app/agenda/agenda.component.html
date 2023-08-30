@@ -1,0 +1,33 @@
+<section class="container">
+  <h3>Aqui temos um formulário reativo</h3>
+  <div>
+    <form [formGroup]="myForm" (ngSubmit)="submitForm">
+      <div>
+        <label for="name">Nome</label>
+        <input type="text" id="name" formControlName="name" />
+        <div *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched" class="erro">
+          Nome é obrigatório
+        </div>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email" />
+        <div *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched" class="erro">
+         Um email válido é obrigatório
+        </div>
+      </div>
+
+      <div>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" formControlName="message"></textarea>
+        <div *ngIf="myForm.get('message')?.invalid && myForm.get('message')?.touched" class="erro">
+          Mensagem não pode ter mais que 300 caracteres.
+        </div>
+      </div>
+
+      <button type="submit" [disabled]="!myForm.valid">Enviar</button>
+
+    </form>
+  </div>
+</section>
